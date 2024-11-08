@@ -19,5 +19,6 @@ public class HelloWorldSpring {
 		System.out.println(context.getBean("age"));
 		System.out.println(context.getBean("person"));
 		System.out.println(context.getBean("address3"));
+//		System.out.println(context.getBean(Address.class)); // Two beans of same type i.e. Address type is causing this conflict
 	}
 }

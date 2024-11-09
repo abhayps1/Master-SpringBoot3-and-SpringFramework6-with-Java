@@ -13,6 +13,7 @@ public class CourseController {
 
 	@RequestMapping("/courses")
 	public List<Course> getCourses() {
-		return Arrays.asList(new Course(1, "book1", "author1"), new Course(2, "book2", "author2"));
+		return Arrays.asList(new Course(1, "book1", "author1"), new Course(2, "book2", "author2"),
+				new Course(0, "zerobook", "zeropublisher"));
 	}
 }

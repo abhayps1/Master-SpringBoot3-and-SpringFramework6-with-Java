@@ -1,8 +1,5 @@
 package com.aps.games;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class PacmanGame implements Game {
 	@Override
 	public void up() {

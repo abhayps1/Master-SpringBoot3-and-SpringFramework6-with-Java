@@ -8,7 +8,7 @@ public class GameConfiguration {
 
 	@Bean
 	public Game game() {
-		return new PacmanGame();
+		return new MarioGame();
 	}
 
 	@Bean

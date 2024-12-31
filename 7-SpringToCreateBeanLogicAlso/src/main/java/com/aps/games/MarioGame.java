@@ -1,5 +1,8 @@
 package com.aps.games;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MarioGame implements Game {
 
 	@Override
@@ -10,7 +13,7 @@ public class MarioGame implements Game {
 
 	@Override
 	public void down() {
-		System.out.println("Go into hold");
+		System.out.println("Go into hole");
 
 	}
 

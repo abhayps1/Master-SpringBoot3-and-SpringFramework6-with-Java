@@ -24,10 +24,12 @@ public class PrototypeBeanApplication {
 
 	public static void main(String[] args) {
 		var context = new AnnotationConfigApplicationContext(PrototypeBeanApplication.class);
+		// same ID of object everytime we try to access a bean
 		System.out.println(context.getBean(NormalClass.class));
 		System.out.println(context.getBean(NormalClass.class));
 		System.out.println(context.getBean(NormalClass.class));
 
+		// Different object are getting created everytime we try to fetch beans
 		System.out.println(context.getBean(PrototypeClass.class));
 		System.out.println(context.getBean(PrototypeClass.class));
 		System.out.println(context.getBean(PrototypeClass.class));

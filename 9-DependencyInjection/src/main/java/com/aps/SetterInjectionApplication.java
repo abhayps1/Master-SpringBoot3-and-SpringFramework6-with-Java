@@ -1,7 +1,5 @@
 package com.aps;
 
-import java.util.Arrays;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -48,7 +46,7 @@ public class SetterInjectionApplication {
 	public static void main(String[] args) {
 		try (var context = new AnnotationConfigApplicationContext(SetterInjectionApplication.class);) {
 			System.out.println(context.getBeanDefinitionNames().length);
-			Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+//			Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
 			System.out.println(context.getBean(BusinessLogic2.class));
 			context.close();

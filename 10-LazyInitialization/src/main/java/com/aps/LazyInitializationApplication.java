@@ -37,7 +37,7 @@ public class LazyInitializationApplication {
 		var context = new AnnotationConfigApplicationContext(LazyInitializationApplication.class);
 		System.out.println("Initialization of context is completed. ");
 		Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
-
+		System.out.println("Streaming is done");
 		context.getBean(ClassB.class);
 	}
 

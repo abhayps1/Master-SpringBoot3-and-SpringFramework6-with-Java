@@ -10,19 +10,19 @@ import jakarta.transaction.Transactional;
 public class CourseJdbcCommandLineRunner implements CommandLineRunner {
 
 	@Autowired
-	private CourseJPARepositoryEM courseJPARepositoryEM;
+	private CourseJPARepositoryEM repository;
 
 	@Override
 	@Transactional
 	public void run(String... args) throws Exception {
-		courseJPARepositoryEM.insert(new Course(1, "jdbc", "ram singh"));
-		courseJPARepositoryEM.insert(new Course(2, "entitymanager", "shyam singh"));
-		courseJPARepositoryEM.insert(new Course(3, "transaction", "karm singh"));
+		repository.insert(new Course(1, "jdbc", "ram singh"));
+		repository.insert(new Course(2, "entitymanager", "shyam singh"));
+		repository.insert(new Course(3, "transaction", "karm singh"));
 
-		courseJPARepositoryEM.deleteById(3);
+		repository.deleteById(3);
 
-		System.out.println(courseJPARepositoryEM.findById(1));
-		System.out.println(courseJPARepositoryEM.findById(2));
+		System.out.println(repository.findById(1));
+		System.out.println(repository.findById(2));
 
 	}
 

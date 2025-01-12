@@ -1,8 +1,10 @@
 package com.aps;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class LoginController {
@@ -19,7 +21,9 @@ public class LoginController {
 //	To resolve this we create post request handler
 
 	@RequestMapping(value = "/login")
-	public String goToWelcomePage() {
+	public String goToWelcomePage(@RequestParam String name, @RequestParam String password, ModelMap model) {
+		model.put("username", name);
+		model.put("password", password);
 		return "welcome";
 	}
 }

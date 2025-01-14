@@ -1,16 +1,30 @@
 Sequence in which things code needs to be followed
 
-Project Names by Order in which this can be studied
-1. TightCoupling
-2. LooseCouplingUsingInterfaces
-3. SpringApp
-4. SpringAppMultipleBeans
-5. PrimaryAndQualifier
-6. GameappSpringLooseCoupled
-7. SpringToCreateBeanLogicAlso
-8. MultipleComponentsusingQualifier
-9. Dependency Injection
-10. Lazy Initialization
-11. Prototype beans
-12. Post Construct and Predstroy
-13. JakartaContextsAndDependencyInjectionCDI
+1-TightCoupling
+2-LooseCouplingUsingInterfaces
+3-SpringApp
+4-SpringAppMultipleBeans
+5-PrimaryAndQualifier
+6-GameappSpringLooseCoupled
+7-SpringToCreateBeanLogicAlso
+8-MultipleComponentsusingQualifier
+9-DependencyInjection
+10-LazyInitialization
+11-PrototypeBean
+12-PostconstructPredestoryBeans
+13-JakartaContextsAndDependencyInjectionCDI
+14-SpringBoot-First
+15-SpringProfiles
+16-Configuration-Properties
+17-SpringBoot-Actuator
+18-Spring-H2
+19-SpringJDBC-hardcoded
+20-SpringJDBC-InsertDelete
+21-SpringJDBC-QueringData
+22-JPA-EntityManager
+23-SpringDataJPA
+24-RenderHtmlAndJsp
+25-RequestParamsInJsp
+26-Logging
+27-MultiMethodsAndViews
+28-TodoApp

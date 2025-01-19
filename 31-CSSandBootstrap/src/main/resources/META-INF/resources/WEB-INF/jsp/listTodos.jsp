@@ -8,9 +8,11 @@
     <body>
         <div>Welcome ${username}</div>
 		<hr>
-		<h1> Your todos </h1>
-		<table border=1>
-			<thead>
+		<div class="container">
+
+			<h1> Your todos </h1>
+			<table border=1 class="table">
+				<thead>
 				<tr>
 					<th>Id</th>
 					<th>Description</th>
@@ -32,5 +34,6 @@
 		</table>
 		<script src="webjars/jquery/3.6.0/jquery.min.js"></script>
 		<script src="webjars/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+	</div>
     </body>
-</html>
+	</html>
